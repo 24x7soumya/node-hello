@@ -1,0 +1,12 @@
+version: "1.0.0"
+services:
+  web:
+    build:
+      context: ./webservice
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - REDIS_HOST="redis"
+  redis:
+    image: "redis:alpine"
