@@ -2,7 +2,7 @@ version: "1.0.0"
 services:
   web:
     build:
-      context: ./webservice
+      context: ./webService
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
