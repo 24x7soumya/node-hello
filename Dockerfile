@@ -1,7 +1,7 @@
 FROM node:16.11.1
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/app
 
 COPY package*.json ./
 RUN npm i
